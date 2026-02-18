@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+  <title>Brew Haven · Coffee & co</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with navigation -->
+  <header>
+    <div class="container header-flex">
+      <div class="logo">
+        <i class="fas fa-mug-hot"></i>
+        <span>Brew Haven</span>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <!-- Navigation menu -->
+      <nav id="mainNav">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Dark mode switcher (coffee theme) -->
+      <button class="dark-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+        <span>Dark Roast</span>
+        <i class="fas fa-coffee"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME PAGE SECTION -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Welcome to Brew Haven</h2>
+          <p>Where every cup tells a story</p>
+          <p>Artisanal coffee · Cozy atmosphere · Organic beans</p>
+          <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT PAGE SECTION -->
+    <section id="about" class="container">
+      <h2 class="section-title">Our Story</h2>
+      <div class="about-story">
+        <div class="about-text">
+          <h3>Brew Haven: Est. 2020</h3>
+          <p>Founded by passionate baristas Elena and Marcus, Brew Haven started as a small cart in the local market. Today, we're a beloved community hub serving the finest ethically-sourced coffee.</p>
+          <p><strong>Our mission:</strong> To create perfect moments through exceptional coffee and genuine hospitality.</p>
+          
+          <h4 style="margin-top: 1.5rem;">Why choose us?</h4>
+          <ul>
+            <li><i class="fas fa-seedling" style="color: var(--mocha);"></i> 100% organic, fair-trade beans</li>
+            <li><i class="fas fa-heart" style="color: var(--mocha);"></i> Hand-roasted in small batches</li>
+            <li><i class="fas fa-users" style="color: var(--mocha);"></i> Community-focused space</li>
+            <li><i class="fas fa-award" style="color: var(--mocha);"></i> Award-winning baristas</li>
+          </ul>
+        </div>
+        
+        <!-- Coffee preparation table (HTML table requirement) -->
+        <div style="flex: 1; min-width: 280px;">
+          <h3>Brew Methods</h3>
+          <table class="brew-table">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Time</th>
+                <th>Strength</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Espresso</td>
+                <td>25 sec</td>
+                <td>●●●●●</td>
+              </tr>
+              <tr>
+                <td>Pour Over</td>
+                <td>3 min</td>
+                <td>●●●●○</td>
+              </tr>
+              <tr>
+                <td>French Press</td>
+                <td>4 min</td>
+                <td>●●●●●</td>
+              </tr>
+              <tr>
+                <td>Cold Brew</td>
+                <td>12 hrs</td>
+                <td>●●●○○</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <!-- Team section -->
+      <h2 class="section-title" style="margin-top: 3rem;">Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <i class="fas fa-user-circle" style="font-size: 4rem; color: var(--mocha);"></i>
+          <h3>Elena Rossi</h3>
+          <p>Head Barista & Co-founder</p>
+          <p><em>"Coffee is my art"</em></p>
+        </div>
+        <div class="team-member">
+          <i class="fas fa-user-circle" style="font-size: 4rem; color: var(--mocha);"></i>
+          <h3>Marcus Chen</h3>
+          <p>Roast Master & Co-founder</p>
+          <p><em>"Perfecting the bean"</em></p>
+        </div>
+        <div class="team-member">
+          <i class="fas fa-user-circle" style="font-size: 4rem; color: var(--mocha);"></i>
+          <h3>Sophia Kim</h3>
+          <p>Pastry Chef</p>
+          <p><em>"Sweet harmony"</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU / PRODUCTS PAGE SECTION -->
+    <section id="menu" class="container">
+      <h2 class="section-title">Our Coffee Menu</h2>
+      <div class="card-grid">
+        <!-- Product 1 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Espresso">
+          <div class="card-content">
+            <h3>Signature Espresso</h3>
+            <p>Rich, full-bodied with caramel notes</p>
+            <div class="price">$3.50</div>
+            <button class="btn-small order-btn" data-item="Signature Espresso">Order</button>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cappuccino">
+          <div class="card-content">
+            <h3>Hazelnut Cappuccino</h3>
+            <p>Velvety foam with hazelnut twist</p>
+            <div class="price">$4.75</div>
+            <button class="btn-small order-btn" data-item="Hazelnut Cappuccino">Order</button>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cold Brew">
+          <div class="card-content">
+            <h3>Vanilla Cold Brew</h3>
+            <p>12-hour steep, smooth & refreshing</p>
+            <div class="price">$4.50</div>
+            <button class="btn-small order-btn" data-item="Vanilla Cold Brew">Order</button>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Latte">
+          <div class="card-content">
+            <h3>Matcha Latte</h3>
+            <p>Ceremonial grade matcha, creamy</p>
+            <div class="price">$5.25</div>
+            <button class="btn-small order-btn" data-item="Matcha Latte">Order</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pastries list (HTML list requirement) -->
+      <h3 style="margin-top: 2rem;">Fresh Pastries</h3>
+      <ul class="pastries-list">
+        <li><i class="fas fa-cookie-bite"></i> Chocolate Croissant · $3.95</li>
+        <li><i class="fas fa-cake"></i> Blueberry Scone · $3.50</li>
+        <li><i class="fas fa-bread-slice"></i> Cinnamon Roll · $4.25</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT PAGE SECTION -->
+    <section id="contact" class="container" style="margin-bottom: 4rem;">
+      <h2 class="section-title">Get in Touch</h2>
+      
+      <div style="display: flex; flex-wrap: wrap; gap: 3rem;">
+        <!-- Contact form -->
+        <div style="flex: 1; min-width: 300px;">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Subscribe to coffee newsletter
+              </label>
+            </div>
+            
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+          <div id="formMessage" style="margin-top: 1rem; font-weight: 600;"></div>
+        </div>
+        
+        <!-- Business details & map placeholder -->
+        <div style="flex: 1; min-width: 250px;">
+          <h3>Visit Our Café</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Bean Street, Coffeeville, CA 90210</p>
+          <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+          <p><i class="fas fa-envelope"></i> hello@brewhaven.com</p>
+          
+          <h4 style="margin: 1.5rem 0 0.5rem;">Opening Hours</h4>
+          <table class="hours-table">
+            <tr><td>Mon-Fri</td><td>7:00 AM - 8:00 PM</td></tr>
+            <tr><td>Sat-Sun</td><td>8:00 AM - 6:00 PM</td></tr>
+          </table>
+          
+          <!-- Image carousel (small) -->
+          <div class="carousel-container" style="margin-top: 2rem;">
+            <h4>Café Moments</h4>
+            <div class="carousel">
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Cafe interior" class="carousel-img active">
+              <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Coffee art" class="carousel-img">
+              <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Pastries" class="carousel-img">
+            </div>
+            <div style="display: flex; gap: 0.5rem; justify-content: center; margin-top: 0.5rem;">
+              <button class="carousel-btn" id="prevImg"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-btn" id="nextImg"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Brew Haven · Crafted with <i class="fas fa-heart" style="color: var(--latte);"></i> and coffee</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
